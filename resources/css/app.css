@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.purchase-container {
+    position: relative;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.accordion-input {
+    display: none;
+}
+
+.accordion-label {
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.accordion-content {
+    display: none;
+    padding: 1rem;
+}
+
+.accordion-input:checked + .accordion-label + .accordion-content {
+    display: block;
+}
